@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unscroll</string>
+    <string name="accessibility_service_description">Unscroll uses this service to detect when a blocked app opens and show your friction barrier. Your screen content is never read or stored.</string>
+
+    <string name="onboarding_hook_title">How many hours a day do you lose on your phone?</string>
+    <string name="onboarding_hook_opt_lt2">Less than 2h</string>
+    <string name="onboarding_hook_opt_2_4">2–4 hours</string>
+    <string name="onboarding_hook_opt_gt4">More than 4h</string>
+
+    <string name="onboarding_agitation_title">That adds up.</string>
+    <string name="onboarding_agitation_days">%1$d full days per year.</string>
+    <string name="onboarding_agitation_body">%1$dh a day is %2$d entire days every year — gone. Scrolling you will never get back.</string>
+
+    <string name="onboarding_diagnosis_title">Your quick-dopamine addiction level is:</string>
+    <string name="onboarding_diagnosis_high">HIGH</string>
+    <string name="onboarding_diagnosis_very_high">VERY HIGH</string>
+    <string name="onboarding_diagnosis_note">Most people underestimate this. Awareness is step one.</string>
+
+    <string name="onboarding_solution_title">Unscroll creates the friction your brain needs to stop.</string>
+    <string name="onboarding_solution_bullet1">A friction barrier every time you open a distracting app</string>
+    <string name="onboarding_solution_bullet2">Streaks and stats that reward showing up</string>
+    <string name="onboarding_solution_bullet3">Fully on-device. No account required</string>
+
+    <string name="onboarding_proof_quote">92% of users reclaim 2+ hours daily in their first week.</string>
+    <string name="onboarding_proof_sub">Your first week starts today.</string>
+    <string name="onboarding_cta_continue">Continue</string>
+
+    <string name="paywall_badge">3-DAY FREE TRIAL</string>
+    <string name="paywall_price_fallback">$4.99 / week</string>
+    <string name="paywall_cta">Start free trial and reclaim my time</string>
+    <string name="paywall_restore">Restore purchases</string>
+    <string name="paywall_terms">Cancel anytime during the trial. After it ends, %1$s billed weekly via Google Play.</string>
+    <string name="paywall_feature1">Friction barrier on any app you choose</string>
+    <string name="paywall_feature2">Streaks and time-reclaimed tracking</string>
+    <string name="paywall_feature3">Cancel anytime — keep your streak data</string>
+    <string name="paywall_loading">Preparing your plan…</string>
+
+    <string name="gate_title">Almost there</string>
+    <string name="gate_waiting">Finish your subscription to start your 3-day free trial and unlock Unscroll.</string>
+    <string name="gate_retry">I subscribed — continue</string>
+    <string name="gate_note">You can leave this screen, but the friction barrier unlocks only after subscribing.</string>
+
+    <string name="goal_setup_title">Set your daily goal</string>
+    <string name="goal_setup_sub">How much time do you want back every day?</string>
+    <string name="goal_opt_30">30 min</string>
+    <string name="goal_opt_60">1 hour</string>
+    <string name="goal_opt_120">2 hours</string>
+    <string name="goal_opt_180">3 hours</string>
+    <string name="challenge_setup_title">Choose your friction challenge</string>
+    <string name="challenge_opt_phrase">Hold + mantra</string>
+    <string name="challenge_opt_phrase_desc">Hold 3 seconds and type your mantra</string>
+    <string name="challenge_opt_stoic">Stoic typing</string>
+    <string name="challenge_opt_stoic_desc">Type a stoic quote to unlock</string>
+    <string name="challenge_opt_breath">Breathing · 30s</string>
+    <string name="challenge_opt_breath_desc">Complete a guided 30-second breath</string>
+    <string name="goal_cta_begin">Begin</string>
+
+    <string name="home_goal_today_label">Daily goal</string>
+    <string name="home_goal_today_value">%1$s of %2$s reclaimed</string>
+    <string name="home_unlocks_today">Unlocks today · %1$d</string>
+
+    <string name="breath_in">Breathe in…</string>
+    <string name="breath_out">Breathe out…</string>
+    <string name="breath_done">Well done</string>
+    <string name="breath_remaining" translatable="false">%1$d</string>
+
+    <string-array name="stoic_quotes">
+        <item>You have power over your mind — not outside events. Realize this, and you will find strength. — Marcus Aurelius</item>
+        <item>We suffer more often in imagination than in reality. — Seneca</item>
+        <item>No man is free who is not master of himself. — Epictetus</item>
+    </string-array>
+
+    <string name="friction_title">This app is blocked</string>
+    <string name="friction_subtitle">Hold the button for 3 seconds to begin</string>
+    <string name="friction_hold">HOLD TO UNLOCK</string>
+    <string name="friction_phrase_prompt">Type: “%1$s”</string>
+    <string name="friction_phrase_hint">Type the phrase above</string>
+    <string name="friction_confirm">Unlock for 10 minutes</string>
+    <string name="friction_back_to_life">Back to Unscroll</string>
+    <string name="friction_phrase">I choose my time</string>
+    <string name="friction_mismatch">Almost — check the spelling</string>
+
+    <string name="home_greeting">Stay unscrolled</string>
+    <string name="home_streak_days">%1$d-day streak</string>
+    <string name="home_streak_zero">Start your streak today</string>
+    <string name="home_interventions_title">Interventions</string>
+    <string name="home_hours_saved_title">Time reclaimed (est.)</string>
+    <string name="home_blocked_apps_title">Blocked apps · %1$d</string>
+    <string name="home_finish_setup">Finish setup</string>
+    <string name="home_settings">Settings</string>
+    <string name="home_empty_blocklist">No apps blocked yet. Tap “Blocked apps” to choose.</string>
+    <string name="home_protection_active">Protection active</string>
+    <string name="home_protection_off">Protection off — enable accessibility</string>
+
+    <string name="perm_title">Enable protection</string>
+    <string name="perm_accessibility_title">Accessibility service</string>
+    <string name="perm_accessibility_desc">Lets Unscroll detect when a blocked app opens and show the friction barrier.</string>
+    <string name="perm_battery_title">Ignore battery optimization</string>
+    <string name="perm_battery_desc">Prevents aggressive systems (Xiaomi, Samsung) from killing the barrier.</string>
+    <string name="perm_open_settings">Open settings</string>
+    <string name="perm_request">Request</string>
+    <string name="perm_granted">Granted</string>
+    <string name="perm_done">Done</string>
+
+    <string name="picker_title">Choose apps to block</string>
+    <string name="picker_selected_count">%1$d selected</string>
+    <string name="picker_search_hint">Search apps</string>
+    <string name="picker_save">Save</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_subscription_title">Subscription</string>
+    <string name="settings_manage_sub">Manage subscription</string>
+    <string name="settings_restore">Restore purchases</string>
+    <string name="settings_blocked_apps_row">Blocked apps</string>
+    <string name="settings_permissions_row">Protection status</string>
+    <string name="settings_goal_row">Daily goal &amp; challenge</string>
+    <string name="settings_estimate_note">“Time reclaimed” is estimated from interventions × average abandoned session length.</string>
+    <string name="settings_version" translatable="false">Version %1$s</string>
+
+    <string name="billing_unavailable">Billing unavailable on this device.</string>
+    <string name="billing_pending">Purchase pending — try again shortly.</string>
+    <string name="billing_failed">Purchase failed. Please try again.</string>
+    <string name="billing_debug_bypass">Continue in test mode</string>
+    <string name="billing_subscribed">Subscribed</string>
+    <string name="billing_not_subscribed">Free preview</string>
+
+    <string name="cd_back">Back</string>
+</resources>

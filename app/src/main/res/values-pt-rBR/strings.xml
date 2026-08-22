@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Unscroll</string>
+    <string name="accessibility_service_description">O Unscroll usa este serviço para detectar quando um app bloqueado é aberto e mostrar sua barreira de fricção. O conteúdo da tela nunca é lido nem armazenado.</string>
+
+    <string name="onboarding_hook_title">Quantas horas por dia você perde no celular?</string>
+    <string name="onboarding_hook_opt_lt2">Menos de 2h</string>
+    <string name="onboarding_hook_opt_2_4">2–4 horas</string>
+    <string name="onboarding_hook_opt_gt4">Mais de 4h</string>
+
+    <string name="onboarding_agitation_title">Isso se acumula.</string>
+    <string name="onboarding_agitation_days">%1$d DIAS INTEIROS por ano.</string>
+    <string name="onboarding_agitation_body">%1$dh por dia são %2$d dias inteiros perdidos todo ano — rolando o feed. Tempo que você nunca vai recuperar.</string>
+
+    <string name="onboarding_diagnosis_title">Seu nível de vício em dopamina rápida é:</string>
+    <string name="onboarding_diagnosis_high">ALTO</string>
+    <string name="onboarding_diagnosis_very_high">MUITO ALTO</string>
+    <string name="onboarding_diagnosis_note">A maioria subestima isso. Reconhecer é o primeiro passo.</string>
+
+    <string name="onboarding_solution_title">O Unscroll cria a fricção necessária para seu cérebro parar.</string>
+    <string name="onboarding_solution_bullet1">Barreira de fricção sempre que você abrir um app distração</string>
+    <string name="onboarding_solution_bullet2">Streaks e estatísticas que recompensam constância</string>
+    <string name="onboarding_solution_bullet3">100% no dispositivo. Sem conta</string>
+
+    <string name="onboarding_proof_quote">92% dos usuários economizam 2h diárias na primeira semana.</string>
+    <string name="onboarding_proof_sub">Sua primeira semana começa hoje.</string>
+    <string name="onboarding_cta_continue">Continuar</string>
+
+    <string name="paywall_badge">TESTE GRÁTIS DE 3 DIAS</string>
+    <string name="paywall_price_fallback">$4,99 / semana</string>
+    <string name="paywall_cta">Começar Teste Grátis e Retomar Meu Tempo</string>
+    <string name="paywall_restore">Restaurar compras</string>
+    <string name="paywall_terms">Cancele quando quiser durante o teste. Após os 3 dias, %1$s cobrado semanalmente via Google Play.</string>
+    <string name="paywall_feature1">Barreira de fricção em qualquer app que você escolher</string>
+    <string name="paywall_feature2">Streaks e rastreio de tempo recuperado</string>
+    <string name="paywall_feature3">Cancele quando quiser — mantenha seus dados</string>
+    <string name="paywall_loading">Preparando seu plano…</string>
+
+    <string name="gate_title">Quase lá</string>
+    <string name="gate_waiting">Conclua sua assinatura para começar o teste grátis de 3 dias e liberar o Unscroll.</string>
+    <string name="gate_retry">Já assinei — continuar</string>
+    <string name="gate_note">Você pode sair desta tela, mas a barreira de fricção só libera após a assinatura.</string>
+
+    <string name="goal_setup_title">Defina sua meta diária</string>
+    <string name="goal_setup_sub">Quanto tempo você quer de volta todos os dias?</string>
+    <string name="goal_opt_30">30 min</string>
+    <string name="goal_opt_60">1 hora</string>
+    <string name="goal_opt_120">2 horas</string>
+    <string name="goal_opt_180">3 horas</string>
+    <string name="challenge_setup_title">Escolha seu desafio de fricção</string>
+    <string name="challenge_opt_phrase">Segurar + mantra</string>
+    <string name="challenge_opt_phrase_desc">Segure 3 segundos e digite seu mantra</string>
+    <string name="challenge_opt_stoic">Digitação estoica</string>
+    <string name="challenge_opt_stoic_desc">Digite uma citação estoica para liberar</string>
+    <string name="challenge_opt_breath">Respiração · 30s</string>
+    <string name="challenge_opt_breath_desc">Complete uma respiração guiada de 30 segundos</string>
+    <string name="goal_cta_begin">Começar</string>
+
+    <string name="home_goal_today_label">Meta diária</string>
+    <string name="home_goal_today_value">%1$s de %2$s recuperados</string>
+    <string name="home_unlocks_today">Liberações hoje · %1$d</string>
+
+    <string name="breath_in">Inspire…</string>
+    <string name="breath_out">Expire…</string>
+    <string name="breath_done">Muito bem</string>
+
+    <string-array name="stoic_quotes">
+        <item>Você tem poder sobre sua mente — não sobre os eventos externos. Perceba isso e encontrará força. — Marco Aurélio</item>
+        <item>Sofremos mais na imaginação do que na realidade. — Sêneca</item>
+        <item>Ninguém é livre se não é dono de si. — Epicteto</item>
+    </string-array>
+
+    <string name="friction_title">Este app está bloqueado</string>
+    <string name="friction_subtitle">Segure o botão por 3 segundos para começar</string>
+    <string name="friction_hold">SEGURE PARA DESBLOQUEAR</string>
+    <string name="friction_phrase_prompt">Digite: “%1$s”</string>
+    <string name="friction_phrase_hint">Digite a frase acima</string>
+    <string name="friction_confirm">Liberar por 10 minutos</string>
+    <string name="friction_back_to_life">Voltar ao Unscroll</string>
+    <string name="friction_phrase">eu escolho meu tempo</string>
+    <string name="friction_mismatch">Quase — confira a grafia</string>
+
+    <string name="home_greeting">Fique sem rolar</string>
+    <string name="home_streak_days">Streak de %1$d dias</string>
+    <string name="home_streak_zero">Comece seu streak hoje</string>
+    <string name="home_interventions_title">Intervenções</string>
+    <string name="home_hours_saved_title">Tempo recuperado (est.)</string>
+    <string name="home_blocked_apps_title">Apps bloqueados · %1$d</string>
+    <string name="home_finish_setup">Concluir configuração</string>
+    <string name="home_settings">Ajustes</string>
+    <string name="home_empty_blocklist">Nenhum app bloqueado ainda. Toque em “Apps bloqueados” para escolher.</string>
+    <string name="home_protection_active">Proteção ativa</string>
+    <string name="home_protection_off">Proteção desligada — ative a acessibilidade</string>
+
+    <string name="perm_title">Ativar proteção</string>
+    <string name="perm_accessibility_title">Serviço de acessibilidade</string>
+    <string name="perm_accessibility_desc">Permite que o Unscroll detecte quando um app bloqueado abre e mostre a barreira de fricção.</string>
+    <string name="perm_battery_title">Ignorar otimização de bateria</string>
+    <string name="perm_battery_desc">Impede que sistemas agressivos (Xiaomi, Samsung) matem a barreira.</string>
+    <string name="perm_open_settings">Abrir ajustes</string>
+    <string name="perm_request">Permitir</string>
+    <string name="perm_granted">Concedido</string>
+    <string name="perm_done">Pronto</string>
+
+    <string name="picker_title">Escolha os apps para bloquear</string>
+    <string name="picker_selected_count">%1$d selecionados</string>
+    <string name="picker_search_hint">Buscar apps</string>
+    <string name="picker_save">Salvar</string>
+
+    <string name="settings_title">Ajustes</string>
+    <string name="settings_subscription_title">Assinatura</string>
+    <string name="settings_manage_sub">Gerenciar assinatura</string>
+    <string name="settings_restore">Restaurar compras</string>
+    <string name="settings_blocked_apps_row">Apps bloqueados</string>
+    <string name="settings_permissions_row">Status da proteção</string>
+    <string name="settings_goal_row">Meta diária e desafio</string>
+    <string name="settings_estimate_note">“Tempo recuperado” é estimado a partir de intervenções × duração média das sessões abandonadas.</string>
+    <string name="settings_version" translatable="false">Versão %1$s</string>
+
+    <string name="billing_unavailable">Cobrança indisponível neste dispositivo.</string>
+    <string name="billing_pending">Compra pendente — tente novamente em instantes.</string>
+    <string name="billing_failed">Falha na compra. Tente novamente.</string>
+    <string name="billing_debug_bypass">Continuar em modo de teste</string>
+    <string name="billing_subscribed">Assinante</string>
+    <string name="billing_not_subscribed">Prévia gratuita</string>
+
+    <string name="cd_back">Voltar</string>
+</resources>
