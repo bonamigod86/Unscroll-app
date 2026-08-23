@@ -88,7 +88,9 @@ To go remote: paste your key in [`SuperwallConfig.kt`](app/src/main/java/com/uns
 
 - [ ] Strict mode (no temporary unlock after N failures)
 - [ ] Usage stats integration for real screen-time deltas
-- [ ] Widgets & quick tiles
+- [x] Home-screen widget — "time reclaimed today", total black
+- [ ] Quick tiles
+- [ ] Adaptive friction escalation presets (shipped as Smart Friction v1)
 - [ ] iOS sibling via shared design system
 
 ---

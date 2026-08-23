@@ -1,9 +1,13 @@
 package com.unscroll.app.data
 
+import android.appwidget.AppWidgetManager
+import android.content.ComponentName
 import android.content.Context
+import android.content.Intent
 import android.content.SharedPreferences
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
+import com.unscroll.app.widget.ReclaimedWidgetReceiver
 
 class PrefsRepository private constructor(context: Context) {
 
@@ -90,6 +94,7 @@ class PrefsRepository private constructor(context: Context) {
             .apply()
         _interventions.value = totalNext
         _todayInterventions.value = todayNext
+        pushWidgetUpdate()
     }
 
     fun incrementUnlocks() {
@@ -97,6 +102,7 @@ class PrefsRepository private constructor(context: Context) {
         val todayNext = _todayUnlocks.value + 1
         prefs.edit().putInt(KEY_TODAY_UNLOCKS, todayNext).apply()
         _todayUnlocks.value = todayNext
+        pushWidgetUpdate()
     }
 
     private fun rollDayIfNeeded() {
@@ -110,6 +116,16 @@ class PrefsRepository private constructor(context: Context) {
             .apply()
         _todayInterventions.value = 0
         _todayUnlocks.value = 0
+        pushWidgetUpdate()
+    }
+
+    private fun pushWidgetUpdate() {
+        runCatching {
+            val intent = Intent(AppWidgetManager.ACTION_APPWIDGET_UPDATE).setComponent(
+                ComponentName(appContext, ReclaimedWidgetReceiver::class.java)
+            )
+            appContext.sendBroadcast(intent)
+        }
     }
 
     private fun todayValue(stored: Int): Int {

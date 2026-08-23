@@ -70,6 +70,19 @@
         <item>Ninguém é livre se não é dono de si. — Epicteto</item>
     </string-array>
 
+    <string-array name="stoic_quotes_long">
+        <item>Não perca mais tempo discutindo como uma boa pessoa deveria ser. Seja ela. Lembre-se: só temos o presente, e o presente é tudo o que controlamos. — Marco Aurélio</item>
+        <item>Não é que tenhamos pouco tempo de vida, é que desperdiçamos muito dele. A vida é longa o bastante, se você souber usá-la. — Sêneca</item>
+    </string-array>
+
+    <string name="night_body">Já é tarde. O feed pode esperar.</string>
+    <string name="override_question">De quantos minutos você precisa?</string>
+    <string name="override_opt">%1$d min</string>
+    <string name="override_note">Quando o tempo acabar, a barreira volta.</string>
+    <string name="privacy_badge" formatted="false">100% no dispositivo — seus hábitos de tela nunca saem do telefone.</string>
+    <string name="widget_reclaimed">Você recuperou %1$s hoje.</string>
+    <string name="widget_reclaimed_desc">Contador minimalista de tempo recuperado no dia</string>
+
     <string name="friction_title">Este app está bloqueado</string>
     <string name="friction_subtitle">Segure o botão por 3 segundos para começar</string>
     <string name="friction_hold">SEGURE PARA DESBLOQUEAR</string>

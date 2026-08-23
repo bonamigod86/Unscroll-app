@@ -71,6 +71,19 @@
         <item>No man is free who is not master of himself. — Epictetus</item>
     </string-array>
 
+    <string-array name="stoic_quotes_long">
+        <item>Waste no more time arguing about what a good person should be. Be one. Remember that all we ever have is the present moment, and the present is all we control. — Marcus Aurelius</item>
+        <item>It is not that we have a short time to live, but that we waste much of it. Life is long enough, if you know how to use it. — Seneca</item>
+    </string-array>
+
+    <string name="night_body">It\'s late. The feed can wait.</string>
+    <string name="override_question">How many minutes do you need?</string>
+    <string name="override_opt">%1$d min</string>
+    <string name="override_note">When time is up, the barrier comes back.</string>
+    <string name="privacy_badge" formatted="false">100% on-device — your screen habits never leave your phone.</string>
+    <string name="widget_reclaimed">You reclaimed %1$s today.</string>
+    <string name="widget_reclaimed_desc">Minimalist daily time-reclaimed counter</string>
+
     <string name="friction_title">This app is blocked</string>
     <string name="friction_subtitle">Hold the button for 3 seconds to begin</string>
     <string name="friction_hold">HOLD TO UNLOCK</string>

@@ -238,6 +238,22 @@ fun SolutionScreen(progress: Float, onNext: () -> Unit) {
         BulletLine(stringResource(R.string.onboarding_solution_bullet1))
         BulletLine(stringResource(R.string.onboarding_solution_bullet2))
         BulletLine(stringResource(R.string.onboarding_solution_bullet3))
+        Spacer(Modifier.height(24.dp))
+        Box(
+            modifier = Modifier
+                .fillMaxWidth()
+                .background(AccentDim.copy(alpha = 0.18f), RoundedCornerShape(14.dp))
+                .padding(horizontal = 16.dp, vertical = 12.dp)
+        ) {
+            Text(
+                text = "🔒 " + stringResource(R.string.privacy_badge),
+                fontSize = 13.sp,
+                lineHeight = 18.sp,
+                color = TextSecondary,
+                textAlign = TextAlign.Center,
+                modifier = Modifier.fillMaxWidth()
+            )
+        }
     }
 }
 
