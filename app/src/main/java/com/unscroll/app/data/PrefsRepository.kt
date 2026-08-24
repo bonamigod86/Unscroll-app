@@ -11,6 +11,8 @@ import com.unscroll.app.widget.ReclaimedWidgetReceiver
 
 class PrefsRepository private constructor(context: Context) {
 
+    private val appContext: Context = context.applicationContext
+
     private val prefs: SharedPreferences =
         context.applicationContext.getSharedPreferences(FILE, Context.MODE_PRIVATE)
 

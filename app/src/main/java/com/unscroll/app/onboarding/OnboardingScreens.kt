@@ -309,7 +309,7 @@ private fun BulletLine(text: String) {
             modifier = Modifier
                 .size(8.dp)
                 .background(AccentGreen, RoundedCornerShape(4.dp))
-        )
+        ) {}
         Spacer(Modifier.padding(start = 12.dp))
         Text(text, fontSize = 15.sp, lineHeight = 21.sp, color = MaterialTheme.colorScheme.onBackground)
     }

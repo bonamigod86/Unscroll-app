@@ -10,7 +10,7 @@ class UnscrollApplication : Application() {
         super.onCreate()
         if (SuperwallConfig.isConfigured) {
             runCatching {
-                Superwall.configure(applicationContext, SuperwallConfig.API_KEY)
+                Superwall.configure(this, SuperwallConfig.API_KEY)
             }
         }
     }

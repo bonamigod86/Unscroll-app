@@ -28,6 +28,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.superwall.sdk.Superwall
+import com.superwall.sdk.paywall.presentation.register
 import com.unscroll.app.R
 import com.unscroll.app.billing.SuperwallConfig
 import com.unscroll.app.data.PrefsRepository

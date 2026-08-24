@@ -2,6 +2,7 @@ package com.unscroll.app.core
 
 import android.content.Intent
 import android.os.Bundle
+import java.text.Normalizer
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.animation.core.animateFloatAsState
@@ -49,6 +50,7 @@ import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.unscroll.app.R
+import com.unscroll.app.MainActivity
 import com.unscroll.app.data.BlockedAppsStore
 import com.unscroll.app.data.FrictionChallenge
 import com.unscroll.app.data.PrefsRepository
@@ -84,9 +86,8 @@ class FrictionOverlayActivity : ComponentActivity() {
                     prefs = prefs,
                     onBackToLife = {
                         startActivity(
-                            Intent(Intent.ACTION_MAIN)
-                                .addCategory(Intent.CATEGORY_HOME)
-                                .setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            Intent(this, MainActivity::class.java)
+                                .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
                         )
                         finish()
                     }
@@ -543,7 +544,12 @@ private fun HoldToBeginButton(holdMs: Float, onComplete: () -> Unit) {
 }
 
 private fun normalize(text: String): String =
-    text.trim().lowercase().replace(Regex("\\s+"), " ")
+    Normalizer.normalize(text, Normalizer.Form.NFD)
+        .replace(Regex("\\p{Mn}+"), "")
+        .replace(Regex("[^\\p{L}\\p{N}\\s]"), "")
+        .trim()
+        .lowercase()
+        .replace(Regex("\\s+"), " ")
 
 private val OVERRIDE_MINUTES = listOf(2, 5, 10)
 private const val LIGHT_HOLD_MS = 2000f

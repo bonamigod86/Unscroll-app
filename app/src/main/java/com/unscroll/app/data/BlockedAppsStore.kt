@@ -26,7 +26,7 @@ class BlockedAppsStore private constructor(context: Context) {
     }
 
     fun isTemporarilyUnlocked(packageName: String, nowMs: Long = System.currentTimeMillis()): Boolean =
-        readUnlocks().getLong(packageName, 0L) > nowMs
+        readUnlocks().optLong(packageName, 0L) > nowMs
 
     fun grantTemporaryUnlock(packageName: String, minutes: Int, nowMs: Long = System.currentTimeMillis()) {
         val unlocks = readUnlocks()

@@ -1,5 +1,7 @@
 package com.unscroll.app.navigation
 
+import android.app.Activity
+import androidx.activity.compose.BackHandler
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.platform.LocalContext
@@ -26,6 +28,10 @@ fun UnscrollNavGraph() {
     val context = LocalContext.current
     val prefs = PrefsRepository.get(context)
     val navController = rememberNavController()
+
+    BackHandler(enabled = navController.previousBackStackEntry == null) {
+        (context as? Activity)?.moveTaskToBack(true)
+    }
 
     NavHost(
         navController = navController,

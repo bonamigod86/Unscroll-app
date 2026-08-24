@@ -35,7 +35,11 @@ class BillingManager(context: Context) : PurchasesUpdatedListener {
 
     private val client: BillingClient = BillingClient.newBuilder(appContext)
         .setListener(this)
-        .enablePendingPurchases(PendingPurchasesParams.newBuilder().build())
+        .enablePendingPurchases(
+            PendingPurchasesParams.newBuilder()
+                .enableOneTimeProducts()
+                .build()
+        )
         .build()
 
     fun connect() {
@@ -66,9 +70,9 @@ class BillingManager(context: Context) : PurchasesUpdatedListener {
                 )
             )
             .build()
-        client.queryProductDetailsAsync(params) { result, detailsList ->
+        client.queryProductDetailsAsync(params) { result, detailsResult ->
             if (result.responseCode == BillingClient.BillingResponseCode.OK) {
-                _products.value = detailsList.filterNotNull()
+                _products.value = detailsResult.productDetailsList
             }
         }
     }
